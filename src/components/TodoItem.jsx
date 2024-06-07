@@ -1,6 +1,6 @@
-const TodoItem = (styles.todoItem) => {
+const TodoItem = ({todo}) => {
     return (
-    <div style={style}>
+    <div style={styles.todoItem}>
         <p>{todo.title}</p>
     </div>
     )
