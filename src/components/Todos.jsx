@@ -1,6 +1,6 @@
 import TodoItem from './TodoItem'
 
-const Todos = ({todos, toggleCompleted}) => {
+const Todos = ({todos, toggleCompleted, deleteTodo}) => {
     return (
         <div style={styles.container}>
             {todos.map((todo) => {
@@ -8,7 +8,8 @@ const Todos = ({todos, toggleCompleted}) => {
                     <TodoItem 
                         key={todo.id} 
                         todo={todo} 
-                        toggleCompleted={toggleCompleted} 
+                        toggleCompleted={toggleCompleted}
+                        deleteTodo={deleteTodo} 
                     />
                 )
             })}
